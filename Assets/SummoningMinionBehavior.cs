@@ -44,7 +44,8 @@ public class SummoningMinionBehavior : MinionBehavior {
 
     RunFromPlayer();
 
-    if((player.transform.position - transform.position).magnitude > 300) {
+
+    if(player != null && (player.transform.position - transform.position).magnitude > 300) {
       Destroy(gameObject);
     }
   }
