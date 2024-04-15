@@ -70,6 +70,7 @@ public class SummoningMinionBehavior : MinionBehavior {
   }
 
   new protected void Orient() {
+    if (player == null) return;
     Vector2 direction = -player.transform.position + transform.position;
     Vector2 scratch = transform.localScale;
     scratch.x = Mathf.Sign(direction.x);
