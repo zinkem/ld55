@@ -15,7 +15,10 @@ public class Parallax : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Vector2 offset = go.transform.position * -1;
-        transform.position = offset * 0.05f;
+        if(go != null) {
+            Vector2 offset = go.transform.position * -1;
+            transform.position = offset * 0.05f;
+        }
+
     }
 }

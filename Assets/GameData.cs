@@ -13,6 +13,10 @@ public class GameData {
     return current;
   }
 
+  public static void ResetGame() {
+    current = new GameData();
+  }
+
 
   public int health;
   public int manaCrystals;

@@ -166,6 +166,7 @@ public class WizardControlller : MonoBehaviour
 			Destroy(col.gameObject);
 
 			if(gameState.health <= 0) {
+				SceneManager.LoadScene("GameOver", LoadSceneMode.Additive);
 				Destroy(gameObject);
 			}
 
